@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="[Imię] [Nazwisko]" />
+    <meta name="description" content="Zadanie 11 - Wyświetlanie aktualnej daty i czasu - [Klasa]" />
+    <title>Zadanie 11 - Wyświetlanie aktualnej daty i czasu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .result-box {
+        background-color: #f8f9fa;
+        border-left: 4px solid #0d6efd;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 5px;
+      }
+      .result-item {
+        margin: 8px 0;
+        font-size: 1.1em;
+      }
+      .result-label {
+        font-weight: bold;
+        color: #495057;
+      }
+      .footer-info {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid #dee2e6;
+      }
+      .footer-info input {
+        max-width: 200px;
+        display: inline-block;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+              <h2 class="mb-0">Zadanie 11: Wyświetlanie aktualnej daty i czasu</h2>
+            </div>
+            <div class="card-body">
+              <p class="text-muted">
+                <strong>Cel:</strong> Stwórz aplikację wyświetlającą aktualną datę i czas w różnych formatach używając metod obiektu Date.
+              </p>
+
+              <button class="btn btn-primary mb-3" id="refreshBtn">Odśwież datę i czas</button>
+
+              <div id="results" class="result-box">
+                <h5 class="mb-3">Aktualna data i czas:</h5>
+                <div class="result-item">
+                  <span class="result-label">Data:</span>
+                  <span id="date"></span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Czas:</span>
+                  <span id="time"></span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Dzień tygodnia:</span>
+                  <span id="dayOfWeek"></span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Nazwa miesiąca:</span>
+                  <span id="monthName"></span>
+                </div>
+                <div class="result-item">
+                  <span class="result-label">Pełna informacja:</span>
+                  <span id="fullInfo" style="font-style: italic;"></span>
+                </div>
+              </div>
+
+              <div class="footer-info">
+                <h6>Informacje o autorze:</h6>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="zadanie_11.js" defer></script>
+  </body>
+</html>
+
